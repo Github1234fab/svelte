@@ -9,7 +9,7 @@
 	fill="grey"
 	xmlns="http://www.w3.org/2000/svg"
 >
-	<rect class="rect" width="245" height="102" fill="#0779bf" stroke="#00D7A9" />
+	<rect class="rect" width="245" height="102" fill="#0779bf" stroke="#96EC85" />
 </svg>
 <h3 class="button-text">Découvrir</h3>
 </div>
@@ -41,9 +41,14 @@
 		}
 	}
 	.button:hover .rect {
-		stroke-width: 3px;
-		animation: dash 1s linear forwards;
+		stroke-width: 4px;
+		animation: dash 1.5s linear forwards;
 	}
+      .wrapper-button:hover .button{
+          filter: drop-shadow(0px 0px 100px #d7e0e6);
+            transform: scale(1.05);
+            transition: 0.5s ease-in-out;
+      }
 	.button-text {
 		font-size: 1.4em;
 		font-weight: 600;

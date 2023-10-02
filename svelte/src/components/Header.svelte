@@ -47,5 +47,9 @@
                 color: black;
 		font-weight: 900;	
         }
+	a:hover {
+                text-decoration: underline;
+		font-weight: 900;
+        }
 	
 </style>
