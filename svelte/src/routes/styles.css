@@ -1,9 +1,11 @@
-*{
+* {
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
 
-:root{
-	--colorA:#0779bf;
+:root {
+	--colorA: #0779bf;
+	--colorB: #063958;
+	--colorC: #96ec85;
 }

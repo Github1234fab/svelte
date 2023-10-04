@@ -11,13 +11,11 @@
 		xmlns="http://www.w3.org/2000/svg"
 	>
 		<rect class="rect" width="245" height="102" fill="#0779bf" />
-
 	</svg>
 	<h3 class="button-text">Découvrir</h3>
 </div>
 
 <style>
-	
 	.wrapper-button {
 		display: flex;
 		flex-direction: column;
@@ -33,7 +31,7 @@
 	.rect {
 		stroke-dasharray: 1000;
 		stroke-dashoffset: 1000;
-		stroke: #96ec85;
+		stroke: var(--colorC);
 		stroke-width: 1px;
 	}
 	@keyframes dash {
@@ -56,6 +54,8 @@
 		font-weight: 600;
 		color: white;
 		margin-top: -170px;
-		z-index: 99;
+		z-index: 1;
+		pointer-events: none;
 	}
+	
 </style>

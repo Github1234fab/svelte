@@ -1,19 +1,41 @@
 <script>
-        export let text;
+	export let text;
+	export let icon;
 </script>
 
-
-<button>  {text}</button>
+<button class="button-circle">
+	<span class="icon">
+		<i class="fa {icon}" />
+	</span>
+	<span class="text">{text}</span>
+</button>
 
 <style>
-
-        button {
-
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                background-color: var(--colorA);
-                color: white;
-                border: solid white 2px;
-        }
+	.button-circle {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 13px;
+		width: 150px;
+		height: 150px;
+		border-radius: 50%;
+		background-color: var(--colorA);
+		color: white;
+		border: solid white 4px;
+		font-weight: 500;
+		font-size: 1.1em;
+		z-index: 9999;
+		transition: 0.3s ease-in-out;
+	}
+	.button-circle:hover {
+		background-color: var(--colorB);
+		border: 2px solid var(--colorC);
+                box-shadow: 0px 0px 100px 3px white;
+         
+	}
+	.icon {
+		font-size: 2em;
+	}
+      
 </style>

@@ -1,23 +1,35 @@
-
 <script>
-        import Button from '../components/Button.svelte';
+	import Button from '../components/Button.svelte';
+	import ButtonCircle from './ButtonCircle.svelte';
+
+	let buttonData = [
+		{ text: 'Consultation', icon: "fa-calendar-check" },
+		{ text: 'Secrétariat', icon: "fa-envelope" },
+		{ text: 'Séjours', icon: "fa-bed" },
+		{ text: 'Chirurgie', icon: "fa-laptop-medical" }
+	];
 </script>
 
 <body>
-	
 	<section class="A-section">
 		<div class="image-visage" />
 		<div class="wrapper-sectionA-title">
-			<h1 class="bouton">Elinxia, Clinique experte en chirurgie reconstructrice et esthétique</h1>
+			<h1 class="bouton">Elinxia, Clinique de chirurgie reconstructrice, plastique et esthétique</h1>
 			<Button />
 		</div>
+		
 	</section>
+	<div class="wrapper-buttonsCircle">
+		{#each buttonData as buttonItem (buttonItem.text)}
+			<ButtonCircle text={buttonItem.text} icon={buttonItem.icon}/>
+		{/each}
+	</div>
+	
 </body>
 
 <style>
-	
 	body {
-		background-color: pink;
+		background-color: white;
 		font-family: poppins;
 	}
 	.A-section {
@@ -125,5 +137,13 @@
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 20px;
+	}
+	.wrapper-buttonsCircle {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: -50px;
+		
 	}
 </style>
