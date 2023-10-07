@@ -109,12 +109,12 @@
 	.wrapper-doctorsName {
 		display: flex;
 		justify-content: space-around;
-		width: 60%;
+		width: 70%;
 		margin-top: 100px;
 	}
 	.doctors-name li {
 		list-style-type: none;
-		font-family: cochin;
+		font-family: Cambria;
 		padding: 10px;
 		font-size: 1.3em;
 	}
