@@ -6,7 +6,7 @@
 		{ text: 'Consultation', icon: "fa-calendar-check" },
 		{ text: 'Secrétariat', icon: "fa-envelope" },
 		{ text: 'Séjours', icon: "fa-bed" },
-		{ text: 'Chirurgie', icon: "fa-laptop-medical" }
+		{ text: 'Bilan', icon: "fa-laptop-medical" }
 	];
 </script>
 
@@ -38,7 +38,7 @@
 		align-content: center;
 		grid-template-columns: 1fr 1fr;
 		width: 100vw;
-		height: 600px;
+		height: 700px;
 		overflow: hidden;
 		background-image: radial-gradient(
 				circle at 67% 83%,

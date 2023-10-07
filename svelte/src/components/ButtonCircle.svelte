@@ -29,9 +29,9 @@
 		transition: 0.3s ease-in-out;
 	}
 	.button-circle:hover {
-		background-color: var(--colorB);
-		border: 2px solid var(--colorC);
-                box-shadow: 0px 0px 100px 3px white;
+		
+                /* box-shadow: 0px 0px 50px  white; */
+		transform: scale(1.1);
          
 	}
 	.icon {

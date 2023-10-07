@@ -3,6 +3,7 @@
 	import Home from "../pages/Home.svelte";  
 	import Header from "../components/Header.svelte";
 	import './styles.css';
+	
 
 </script>
 

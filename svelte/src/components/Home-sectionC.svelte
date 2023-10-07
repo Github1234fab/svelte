@@ -1,36 +1,33 @@
 <script>
 	import CardsHomeSectionC from './Cards-HomeSectionC.svelte';
+	import visageImage from '../assets/visage-Asection.png';
+	import stetoscopeImage from '../assets/Stetoscope.png';
 
 	let cardsText = [
 		{
+			key: 1,
 			text: 'aerjbfakeljrbvlejarbv',
 			paragraph: 'kdsjbfksjdbf',
-			textButton: 'vhksfbkvhsbfkv',
-			src: 'https://www.montpellier-chirurgie-plastique-esthetique.com/assets/img/page/17/large/fr/entree-clinique-saint-jean-montpellier.jpg'
+			src: visageImage,
 		},
 		{
+			key: 2,
 			text: 'aerjbfakeljrbvlejarbv',
 			paragraph: 'kdsjbfksjdbf',
-			textButton: 'vhksfbkvhsbfkv',
-			src: 'https://www.montpellier-chirurgie-plastique-esthetique.com/assets/img/page/17/large/fr/entree-clinique-saint-jean-montpellier.jpg'
+			src: stetoscopeImage ,
 		},
 		{
+			key: 3,
 			text: 'aerjbfakeljrbvlejarbv',
 			paragraph: 'kdsjbfksjdbf',
-			textButton: 'vhksfbkvhsbfkv',
 			src: 'https://www.montpellier-chirurgie-plastique-esthetique.com/assets/img/page/17/large/fr/entree-clinique-saint-jean-montpellier.jpg'
 		}
 	];
 </script>
 
 <section class="section-C">
-	{#each cardsText as card (card.text)}
-		<CardsHomeSectionC
-			text={card.text}
-			src={card.src}
-			textButton={card.textButton}
-			paragraph={card.paragraph}
-		/>
+	{#each cardsText as card (card.key)}
+		<CardsHomeSectionC src={card.src} text={card.text} paragraph={card.paragraph} />
 	{/each}
 </section>
 
@@ -42,7 +39,7 @@
 		justify-content: center;
 		gap: 10px;
 		width: 100vw;
-		height: 1000px;
+		height: 1500px;
 		background-image: radial-gradient(
 				circle at 85% 1%,
 				hsla(190, 0%, 93%, 0.05) 0%,

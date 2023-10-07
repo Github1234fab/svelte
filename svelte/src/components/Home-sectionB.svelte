@@ -4,20 +4,49 @@
 
 <section class="B-section">
 	<h2 class="section-B-title">
-		Notre équipe médicale est composée de chirurgiens de grande renommée mondiale.
+		Une équipe d'experts internationaux en chirurgie plastique et reconstructrice.
 	</h2>
-	<p class="section-B-docteurs">
-		Dr. Jean-Louis Garient, Dr. Dominique Fiedierck, Dr. Alain Badout, Dr.  Monique Verot, Dr.Hugo
-		Bouvier, Dr. Capucine Monart, Dr. Stephen Groden, Dr. Alan Smith Jr, Dr. Afna Azrdaff, Dr. Amid
-		Maalouf, Dr. Lorenzo Marenzi, Dr. Lawrence Jacob ...
-	</p>
+	<div class="wrapper-doctorsName">
+		<ul class="doctors-name">
+			<li>Dr. Dominique Fiedelick</li>
+			<li>Dr. Alain Badout</li>
+			<li>Dr. Monique Verot</li>
+			<li>Dr. Lorenzo Marenzi</li>
+			<li>Dr. Amid Maalouf</li>
+		</ul>
+		<ul class="doctors-name">
+			<li>Dr.Hugo Bouvier</li>
+			<li>Dr. Capucine Monart</li>
+			<li>Dr. Stephen Groden</li>
+			<li>Dr. Lorenzo Marenzi</li>
+			<li>Dr. Alan Smith</li>
+		</ul>
+		<ul class="doctors-name">
+			<li>Dc. Marcus Cortesi</li>
+			<li>Dr. Dina Wahington</li>
+			<li>Dr. Ali Boudamief</li>
+			<li>Dr. Shera Hoshen</li>
+			<li>Dr. Eliot Murphy</li>
+		</ul>
+	</div>
+
 	<ImagesSectionB />
 </section>
 
 <style>
 	.B-section {
-		width: 100vw;
-		height: 1000px;
+		width: 100%;
+		height: fit-content;
+		margin-top: -100px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: content;
+		justify-content: center;
+		align-items: center;
+		background-position: 100%;
+		background-size: cover;
+		background-color: rgb(193, 231, 68);
 		background-image: radial-gradient(
 				circle at 13% 47%,
 				rgba(140, 140, 140, 0.03) 0%,
@@ -68,23 +97,25 @@
 				transparent 100%
 			),
 			linear-gradient(90deg, rgb(255, 255, 255), rgb(255, 255, 255));
-		background-position: 100%;
-		margin-top: -100px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 	}
+
 	.section-B-title {
 		font-size: 2.4em;
 		color: rgb(14, 13, 13);
 		font-weight: 200;
-		margin-top: 140px;
+		text-align: center;
+		margin-top: 200px;
 	}
-	.section-B-docteurs {
-		margin-top: 50px;
-		text-align: left;
-		font-weight: 200;
-		width: 70%;
+	.wrapper-doctorsName {
+		display: flex;
+		justify-content: space-around;
+		width: 60%;
+		margin-top: 100px;
+	}
+	.doctors-name li {
+		list-style-type: none;
+		font-family: cochin;
+		padding: 10px;
+		font-size: 1.3em;
 	}
 </style>

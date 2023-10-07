@@ -8,37 +8,36 @@
 </div>
 
 <style>
-	.wrapper-images-sectionB {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		align-items: center;
-		width: 100vw;
-		height: 400px;
-		padding: 10px;
-		margin-top: 200px;
-		cursor: pointer;
-	}
-	.wrapper-img{
-		width: 400px;
-		height: 100%;
-		overflow: hidden;
+		.wrapper-images-sectionB {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			padding: 10px;
+			margin-top: 100px;
+			cursor: pointer;
+			gap: 30px;									
+		}
+		.wrapper-img {
+			width: 500px;
+			height: 300px;
+			overflow: hidden;
 			box-shadow: 0px 1px 4px var(--colorB);
-	}
-	.image {
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: center;
-		width: 100%;
-		height: 100%;
-	
-		border: none;
-		opacity: 0.9;
-		transition: 0.7s ease-in-out;
-	}
+		}
+		.image {
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			width: 100%;
+			height: 100%;
+			flex-grow: 1;
+			border: none;
+			opacity: 0.9;
+			transition: 0.7s ease-in-out;
+		}
 	.image:hover {
 		opacity: 1;
-	transform: scale(1.2);
+		transform: scale(1.2);
 	}
 
 	.img1 {
