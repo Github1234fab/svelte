@@ -26,7 +26,7 @@
 		font-weight: 500;
 		font-size: 1.1em;
 		z-index: 9999;
-		transition: 0.3s ease-in-out;
+		transition: 0.2s ease-in-out;
 	}
 	.button-circle:hover {
 		

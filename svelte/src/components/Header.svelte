@@ -9,7 +9,7 @@
 			if (currentScrollY > prevScrollY) {
 				// Défilement vers le bas
 				headerElement.style.opacity = 0;
-				headerElement.style.transition = 'opacity 0.9s ease-in-out';
+				headerElement.style.transition = 'opacity 1s ease-in-out';
 			} else {
 				// Défilement vers le haut
 				headerElement.style.opacity = 1;
@@ -41,8 +41,8 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		padding: 20px;
-		height: 80px;
+		align-content: center;
+		height: 100px;
 		position: fixed;
 		background-color: white;
 		z-index: 999999;
@@ -71,7 +71,10 @@
 		font-weight: 900;
 	}
 	a:hover {
-		text-decoration: underline;
+		text-decoration: none;
 		font-weight: 900;
+		color: var(--colorA);
+		transition: 0.3s ease-in-out;
+		border-bottom: 7px var(--colorA) solid;
 	}
 </style>

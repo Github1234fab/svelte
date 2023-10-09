@@ -123,9 +123,9 @@
 	}
 	.image-visage {
 		grid-column: 1/2;
-		height: 830px;
+		height: 850px;
 		width: 100%;
-		margin-top: 100px;
+		margin-top: 160px;
 		background-image: url('../assets/visage-Asection.png');
 		background-size: contain;
 		background-position: center;

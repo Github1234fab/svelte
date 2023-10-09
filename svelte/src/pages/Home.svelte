@@ -7,8 +7,8 @@
 </script>
 
 <HomeSectionA/>
-<HomeSectionB/>
 <HomeSectionC/>
+<HomeSectionB/>
 
 
 <style></style>
